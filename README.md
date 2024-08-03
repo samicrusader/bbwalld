@@ -9,7 +9,8 @@ Thanks to @penguin2233 for teaching me how sprintf works lol
 1. Change `boot.wim[0]:\Windows\System32\winpe.jpg` to a black 16x16 bitmap and remove `boot.wim[0]:\Windows\System32\WallpaperHost.exe`
 2. Change paths to `nconvert.exe`, `bsetroot.exe` and your actual background image on lines 79-81 in <main.cpp>
 3. Build using any C++ compiler that will produce binaries that run in your WinPE environment
-4. Add bbwalld to your winpeshl.ini w/ delay before launching bbLean:```ini
+4. Add bbwalld to your winpeshl.ini w/ delay before launching bbLean:
+```ini
 [LaunchApps]
 %systemroot%\system32\wpeinit.exe
 %systemroot%\system32\netstart.exe
